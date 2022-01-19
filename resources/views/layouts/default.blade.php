@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     .content{
       /* background-image:linear-gradient(to right,#C9D6FF,#E2E2E2); */
