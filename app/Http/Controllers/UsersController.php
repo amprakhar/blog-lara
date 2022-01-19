@@ -64,10 +64,10 @@ class UsersController extends Controller
             $encrypted_password = crypt::encrypt($data['password']);
             $user->password = $encrypted_password;
             $user->save();
-            $req->session()->flash('msg','Account has been registered successfully.');
+            $req->session()->flash('success','Account has been registered successfully.');
             return redirect('/');
         } else{
-            $req->session()->flash('register_status','This Email already exists.');
+            $req->session()->flash('error','This Email already exists.');
             return redirect('/register');
         }
     }

@@ -8,9 +8,9 @@
           <h4 class="card-title">Register your Account</h4>
         </div>
         <div class="card-body">
-          @if(Session::get('register_status'))
+          @if(Session::get('error'))
             <div class="alert alert-success alert-dismissible fade show" onclick="this.classList.add('d-none');" role="alert">
-              {{Session::get('register_status')}}
+              {{Session::get('error')}}
             </div>
           @endif
           

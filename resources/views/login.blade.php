@@ -12,9 +12,9 @@
             <div class="alert alert-danger alert-dismissible fade show" onclick="this.classList.add('d-none');" role="alert">
               {{Session::get('error')}}
             </div>
-          @elseif(Session::get('msg'))
+          @elseif(Session::get('success'))
             <div class="alert alert-success alert-dismissible fade show" onclick="this.classList.add('d-none');" role="alert">
-              {{Session::get('msg')}}
+              {{Session::get('success')}}
             </div>
           @endif
 
